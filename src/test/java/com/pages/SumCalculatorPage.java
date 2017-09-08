@@ -27,15 +27,16 @@ public class SumCalculatorPage extends Page {
     
     
     public void CalculateAddition(String input)
-    {System.out.println("inside calculate addition");
+    {
+    	
        SetterHelper.SetTxtInputValue(TxtInputAreaSumCalculator, input);
        VisibilityHelper.WaitForPresent(BtnCalculate);
        BtnCalculate.click();
-       System.out.println("end calculate addition");
-        
+    
     }
 
 	public String GetResult(WebElement element) {
+		
 		String actualResult = element.getText();
 		return actualResult;
 	}
