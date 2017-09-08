@@ -12,10 +12,10 @@ public abstract class Page {
 	 protected String baseURL;
 	 public Page()
      {
-		 System.out.println("inside page class");
+		
          PageFactory.initElements(com.configuration.BaseUITest.Driver, this);
-         //driver = com.configuration.BaseUITestConstants.DRIVER;
+       
         baseURL = com.configuration.BaseUITestConstants.URL;
-         System.out.println("end of page class");
+       
      }
 }
